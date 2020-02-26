@@ -1,6 +1,6 @@
 package src;
 
-import src.problems.Problem001;
+import src.problems.*;
 
 public class Main {
 
@@ -11,7 +11,15 @@ public class Main {
     System.out.println(msg);
   }
 
+  private static void solveProblem002() {
+    Problem002 p2 = new Problem002();
+    int ans = p2.evenFibonnaciSum(4000000);
+    String msg = "Solution to problem 002: " + Integer.toString(ans) + "\n";
+    System.out.println(msg);
+  }
+
   public static void main(String[] args) {
     solveProblem001();
+    solveProblem002();
   }
 }
